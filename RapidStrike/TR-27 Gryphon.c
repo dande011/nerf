@@ -56,64 +56,64 @@ const static byte DazzleChar[128] = {B01100000, B00110000, B00011000, B00001100,
 unsigned long DazzleTimer;
 
 struct SWITCH {
-const int Pin;
-boolean Value;
-byte Average;
-unsigned long NextRead;
-byte ReadFrequency;
+	const int Pin;
+	boolean Value;
+	byte Average;
+	unsigned long NextRead;
+	byte ReadFrequency;
 };
 
 struct MOTOR {
-const byte Enable;
-const byte Output1;
-const byte Output2;
-int Speed; //-256 to 256. 1 and -1 are coast. 0 is brake 256 is full forward, -256 is full reverse.
+	const byte Enable;
+	const byte Output1;
+	const byte Output2;
+	int Speed; //-256 to 256. 1 and -1 are coast. 0 is brake 256 is full forward, -256 is full reverse.
 };
 MOTOR Piston = {3,2,13,0};
 
 struct BLINKABLE {
-boolean LeftDP;
-boolean LeftDPValue;
-boolean RightDP;
-boolean RightDPValue;
-boolean Display;
-boolean DisplayValue;
-boolean Dashes;
-boolean DashesValue;
+	boolean LeftDP;
+	boolean LeftDPValue;
+	boolean RightDP;
+	boolean RightDPValue;
+	boolean Display;
+	boolean DisplayValue;
+	boolean Dashes;
+	boolean DashesValue;
 };
 
 struct NERF {
-const byte FlywheelPin;
-const byte PlungerPin;
-const byte BrakePin;
-const byte IrPin;
-boolean Safty;
-boolean Secret;
-boolean Loaded;
-unsigned long LoadedDelay;
-boolean Jam;
-unsigned long Pending;
-byte Firing;
-unsigned long NextShot;
-unsigned long NextStandby;
-int Ammo;
-byte BurstCount;
-unsigned long Sleep;
-int Brightness;
-boolean CountDown;
-int ShotsFired;
-int ShotsPending;
-int Reloads;
-byte FlywheelSpeed;
-unsigned long FlywheelNext;
-byte FlywheelStep;
-int PlungerSpeed;
-unsigned long PlungerNext;
-byte PlungerStep;
+	const byte FlywheelPin;
+	const byte PlungerPin;
+	const byte BrakePin;
+	const byte IrPin;
+	boolean Safty;
+	boolean Secret;
+	boolean Loaded;
+	unsigned long LoadedDelay;
+	boolean Jam;
+	unsigned long Pending;
+	byte Firing;
+	unsigned long NextShot;
+	unsigned long NextStandby;
+	int Ammo;
+	byte BurstCount;
+	unsigned long Sleep;
+	int Brightness;
+	boolean CountDown;
+	int ShotsFired;
+	int ShotsPending;
+	int Reloads;
+	byte FlywheelSpeed;
+	unsigned long FlywheelNext;
+	byte FlywheelStep;
+	int PlungerSpeed;
+	unsigned long PlungerNext;
+	byte PlungerStep;
 };
 
-NERF Gun = {5, 3, 2, 6};
-SWITCH Reed1 = {7,HIGH,10,0,4};
+NERF Gun = {5, 3, 2, 6}; //FlywheelPin, PlungerPin, BrakePin, IrPin
+SWITCH Reed1 = {7,HIGH,10,0,4}; //Pin, value, Avg, NextRead, ReadFreq
 SWITCH Reed2 = {8,HIGH,10,0,4};
 SWITCH Reed3 = {A3,HIGH,10,0,4};
 SWITCH Trigger = {4,HIGH,10,0,5};
