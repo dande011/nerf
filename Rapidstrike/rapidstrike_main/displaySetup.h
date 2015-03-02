@@ -12,8 +12,14 @@ void displaySetup(){
   display.drawBitmap(0, 0, rapidstrike, rapidstrikeWPixels, rapidstrikeHPixels, 1);
   display.display();
   delay(1000);
+  /*
   display.invertDisplay(true); //invert image (for teh cool factor)
   delay(1500);
+  for(int i=0; i<64; i+=5){ // drop the image out of the frame
+    display.clearDisplay();
+    display.drawBitmap(0, i, rapidstrike, rapidstrikeWPixels, rapidstrikeHPixels, 1);
+    display.display();
+  }
   display.invertDisplay(false); //fix inversion
   display.clearDisplay();
   display.display();
@@ -21,4 +27,5 @@ void displaySetup(){
   display.setTextSize(2);
   display.setTextColor(WHITE);
   display.setCursor(0,0);
+  */
 }
