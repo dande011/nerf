@@ -9,6 +9,7 @@
 #include "displaySetup.h"
 
 int count = 0;
+char string[] = "Hello World! ";
 
 void setup() {
   Serial.begin(9600);
@@ -16,7 +17,7 @@ void setup() {
 }
 
 void loop() {
-  display.print(count%10);
+  display.print(string[(count%13)]);
   display.display();
   ++count;
   delay(100);
