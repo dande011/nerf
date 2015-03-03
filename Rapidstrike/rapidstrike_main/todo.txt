@@ -1,0 +1,11 @@
+Figure out Arduino Encoders
+
+Figure out best system for Arduino Menus, and how to display onto OLED
+
+Figure out ammo counter
+
+Wire up gun
+
+Test gun functions
+
+Test values for gun (plunger, flywheels, etc.)
