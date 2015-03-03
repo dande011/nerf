@@ -12,7 +12,6 @@ void displaySetup(){
   display.drawBitmap(0, 0, rapidstrike, rapidstrikeWPixels, rapidstrikeHPixels, 1);
   display.display();
   delay(1000);
-  /*
   display.invertDisplay(true); //invert image (for teh cool factor)
   delay(1500);
   for(int i=0; i<64; i+=5){ // drop the image out of the frame
@@ -27,5 +26,4 @@ void displaySetup(){
   display.setTextSize(2);
   display.setTextColor(WHITE);
   display.setCursor(0,0);
-  */
 }

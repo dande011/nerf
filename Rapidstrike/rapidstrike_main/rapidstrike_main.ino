@@ -5,6 +5,7 @@
 
 #define OLED_RESET 4
 
+#include "definitions.h"
 #include "rapidstrike_image.h"
 #include "displaySetup.h"
 
