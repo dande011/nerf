@@ -10,7 +10,7 @@
 #include "displaySetup.h"
 
 int count = 0;
-char string[] = "Target ";
+char string[] = "Cuesta ";
 int strLen = 7;
 
 void setup() {
