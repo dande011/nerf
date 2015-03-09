@@ -10,8 +10,8 @@
 #include "displaySetup.h"
 
 int count = 0;
-char string[] = "loop ";
-int strLen = 5;
+char string[] = "Target ";
+int strLen = 7;
 
 void setup() {
   Serial.begin(9600);
