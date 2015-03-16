@@ -8,7 +8,8 @@
 
 int timer =0;
 int prevTimer=0;
-int deltay=25;
+int deltay=50;
+long newPosition=0;
 
 // Change these two numbers to the pins connected to your encoder.
 //   Best Performance: both pins have interrupt capability
@@ -26,7 +27,8 @@ long oldPosition  = -999;
 
 void loop() {
   timer = millis();
-  long newPosition = myEnc.read();
+  //if(timer-prevTimer >= deltay)
+    newPosition = myEnc.read();
   if ((newPosition != oldPosition) && (timer-prevTimer >= deltay)) {
   //  if (newPosition != oldPosition) {
     oldPosition = newPosition;
