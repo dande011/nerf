@@ -10,8 +10,8 @@
 #include "displaySetup.h"
 
 int count = 0;
-char string[] = "Cuesta ";
-int strLen = 7;
+char string[] = "Test ";
+int strLen = 5;
 
 void setup() {
   Serial.begin(9600);

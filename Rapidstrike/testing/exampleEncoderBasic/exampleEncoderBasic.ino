@@ -8,7 +8,7 @@
 
 int timer =0;
 int prevTimer=0;
-int deltay=50;
+int deltay=25;
 
 // Change these two numbers to the pins connected to your encoder.
 //   Best Performance: both pins have interrupt capability
