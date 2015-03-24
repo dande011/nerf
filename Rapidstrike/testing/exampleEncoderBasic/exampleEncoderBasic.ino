@@ -8,7 +8,7 @@
 
 int timer =0;
 int prevTimer=0;
-int deltay=50;
+int deltay=20;
 long newPosition=0;
 
 // Change these two numbers to the pins connected to your encoder.
